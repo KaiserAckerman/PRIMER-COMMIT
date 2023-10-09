@@ -1,0 +1,374 @@
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    font-size: 16px; /* Aumenta el tamaño de fuente */
+    min-height: 80px; /* Altura mínima para la barra de navegación */
+    max-height: 80px; /* Altura máxima para la barra de navegación */
+    justify-content: center;
+    
+}
+
+nav img:nth-child(1) {
+  position: relative;
+    right: 400px;
+}
+
+nav img:nth-child(2) {
+  position: relative;
+  right: -60px;
+}
+
+nav img:nth-child(3) {
+  position: relative;
+  right: -390px;
+  top: -5px;
+}
+
+h1{
+  position: relative;
+  top: 45px;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px; /* Aumenta el tamaño de fuente */
+}
+
+button {
+    background-color: #ff5a5f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilos para el formulario de búsqueda */
+.search-form {
+  background-image: url('background-image.jpg');
+  background-size: cover;
+  color: #333;
+  text-align: center;
+  margin: -10px;
+ 
+}
+form{
+  position: relative;
+  top: 25px;
+}
+
+.search-form{
+  position: relative;
+  top: -40px;
+}
+
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+button {
+  padding: 10px; /* Aumenta el tamaño de fuente */
+  font-size: 10px; /* Aumenta el tamaño de fuente */
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff5a5f;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Estilos para los listados de alojamientos */
+.listings {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 180px;
+}
+
+.listing {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Estilos para las imágenes de los listados de alojamientos */
+.listing img {
+  width: 100%;
+  height: 300px; /* Establece la altura deseada para todas las imágenes */
+  object-fit: cover; /* Ajusta la imagen para llenar el espacio */
+}
+.listing img {
+  border-radius:10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+  p {
+    font-size: 12px;
+  }
+
+  header {
+    position: fixed;
+    top: 0; /* Fija el encabezado en la parte superior */
+    left: 0; /* Fija el encabezado en la izquierda */
+    width: 100%; /* Ocupa el 100% del ancho de la pantalla */
+    background-color: #fff; /* Estilo de fondo opcional */
+    z-index: 100; /* Asegura que el encabezado esté en la parte superior de otros elementos */
+  }
+  
+  @media screen and (max-width: 768px) {
+    li {
+        margin-right: 10px; /* Margen reducido para pantallas más pequeñas */
+    }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+.space {
+  height: 100px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer-top {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+/*dropdowns*/
+
+.dropdown-section {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-top: 35px;
+}
+
+.dropdown-button {
+  display: flex;
+  background-color: #484848;
+  border: 0;
+  color: #fff;
+  text-indent: 10px;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+ 
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown:after {
+  content: "";
+  font: 1em "Consolas", monospace;
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 8px;
+  top: 25%;
+  padding: 0 0 -25% 0;
+  margin-right: 3px;
+  border-width: 4px 0px 4px 4px;
+  transform: rotate(90deg);
+  border-style: solid;
+  border-color: transparent #888;
+  pointer-events: none;
+}
+
+.dropdown:before {
+  content: "";
+  right: 6px;
+  top: 0px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  pointer-events: none;
+  display: block;
+}
+
+#languages-dropdown {
+  top: -52px;
+}
+
+#currency-dropdown {
+  top: -7px;
+}
+
+.dropdown-item {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: bold;
+  left: 0;
+}
+
+.dropdown-item:hover {
+  background-color: blue;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*links*/
+
+.links-section {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.links-header {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+}
+
+#company-links,
+#discover-links {
+  margin-right: 20px;
+}
+
+#mobile-links {
+  display: none;
+  width: 50%;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.link-item {
+  color: #fff;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+.link-item:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-bar {
+  margin: auto;
+  border-bottom: 1px solid #777;
+  width: 80%;
+}
+
+.join {
+  text-align: center;
+  font-size: 14px;
+  color: #f7f7f7;
+}
+
+.socialIcons-section {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.circle {
+  position: relative;
+  border: 1px solid #666;
+  width: 36px;
+  height: 36px;
+  border-radius: 50px;
+}
+
+.icon {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+  color: #fff;
+}
+
+.icon:hover {
+  color: #cdcdcd;
+}
+
+.copywright {
+  text-align: center;
+  font-size: 0.8em;
+  color: #666;
+}
+
+@media only screen and (max-width: 745px) {
+  .links-section,
+  .join,
+  .footer-bar {
+    display: none;
+  }
+  .dropdown-section {
+    width: 100%;
+  }
+  #mobile-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .socialIcons-section {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .socialIcons-section {
+    width: 80%;
+    font-size: 0.7em;
+  }
+  .circle {
+    width: 30px;
+    height: 30px;
+  }
+}
