@@ -6,21 +6,32 @@ nav {
     font-size: 16px; /* Aumenta el tamaño de fuente */
     min-height: 80px; /* Altura mínima para la barra de navegación */
     max-height: 80px; /* Altura máxima para la barra de navegación */
+    justify-content: center;
+    
+}
+
+nav img:nth-child(1) {
+  position: relative;
+    right: 240px;
+}
+
+nav img:nth-child(2) {
+  position: relative;
+  right: -65px;
+}
+
+nav img:nth-child(3) {
+  position: relative;
+  right: -260px;
+  top: -5px;
+}
+
+h1{
+  position: relative;
+  top: 45px;
 }
 
 
-
-.logo {
-
-  justify-content: left;
-         
-}
-.CentroDiv{
-  justify-content: center;
-}
-.InicioSesion{
-  justify-content: right;
-}
 ul {
   list-style: none;
   margin: 0;
@@ -50,20 +61,26 @@ button {
   background-size: cover;
   color: #333;
   text-align: center;
-  padding: 20px; /* Aumenta el espacio interior */
+  margin: -20px;
+ 
+}
+form{
+  position: relative;
+  top: 22px;
 }
 
-h1 {
-  font-size: 36px; /* Aumenta el tamaño de fuente */
-  margin-bottom: 20px;
+.search-form{
+  position: relative;
+  top: -50px;
 }
+
 
 input[type="text"],
 input[type="date"],
 input[type="number"],
 button {
-  padding: 15px; /* Aumenta el tamaño de fuente */
-  font-size: 16px; /* Aumenta el tamaño de fuente */
+  padding: 10px; /* Aumenta el tamaño de fuente */
+  font-size: 10px; /* Aumenta el tamaño de fuente */
   border: none;
   border-radius: 5px;
 }
