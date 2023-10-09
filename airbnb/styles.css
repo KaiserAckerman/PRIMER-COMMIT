@@ -2,32 +2,38 @@
 nav {
     background-color: #f7f7f7;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    font-size: 16px; /* Aumenta el tamaño de fuente */
+    min-height: 80px; /* Altura mínima para la barra de navegación */
+    max-height: 80px; /* Altura máxima para la barra de navegación */
 }
+
+
 
 .logo {
-    font-size: 1px;
-    font-weight: bold;
-        
-}
 
+  justify-content: left;
+         
+}
+.CentroDiv{
+  justify-content: center;
+}
+.InicioSesion{
+  justify-content: right;
+}
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-li {
-    display: inline;
-    margin-right: 20px;
-}
+
 
 a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px; /* Aumenta el tamaño de fuente */
 }
 
 button {
@@ -40,39 +46,32 @@ button {
 
 /* Estilos para el formulario de búsqueda */
 .search-form {
-    background-image: url('background-image.jpg');
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
+  background-image: url('background-image.jpg');
+  background-size: cover;
+  color: #333;
+  text-align: center;
+  padding: 20px; /* Aumenta el espacio interior */
 }
 
 h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-form {
-    display: flex;
-    justify-content: center;
+  font-size: 36px; /* Aumenta el tamaño de fuente */
+  margin-bottom: 20px;
 }
 
 input[type="text"],
 input[type="date"],
-input[type="number"] {
-    padding: 10px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-    width: 200px;
+input[type="number"],
+button {
+  padding: 15px; /* Aumenta el tamaño de fuente */
+  font-size: 16px; /* Aumenta el tamaño de fuente */
+  border: none;
+  border-radius: 5px;
 }
 
 button {
-    background-color: #ff5a5f;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+  background-color: #ff5a5f;
+  color: #fff;
+  cursor: pointer;
 }
 
 /* Estilos para los listados de alojamientos */
@@ -102,58 +101,70 @@ img {
     height: auto;
 }
 
-/* Estilos para el pie de página */
 footer {
-    background-color: #333; /* Cambia el color de fondo según tus preferencias */
-    color: #fff; /* Color de texto en el pie de página */
-    padding: 20px 0; /* Espaciado interno en la parte superior e inferior del pie de página */
-    text-align: center; /* Alinea el texto al centro */
-}
-
-/* Estilos para el contenido del pie de página */
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px; /* Ancho máximo del contenido del pie de página */
-    margin: 0 auto; /* Centra el contenido del pie de página horizontalmente */
-}
-
-.footer-logo img {
-    width: 100px; /* Ajusta el tamaño del logotipo según tus necesidades */
-}
-
-.footer-links ul,
-.footer-social ul {
-    list-style: none;
-    padding: 0;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    margin-bottom: 20px;
+  }
+  
+  .col-md-4 {
+    width: 33.33333333%;
+    float: left;
+  }
+  
+  ul {
+    list-style-type: none;
     margin: 0;
-    text-align: center;
-}
-
-.footer-links ul li,
-.footer-social ul li {
-    display: inline-block;
-    margin-right: 20px; /* Espaciado entre elementos */
-}
-
-.footer-links ul li:last-child,
-.footer-social ul li:last-child {
-    margin-right: 0; /* Elimina el margen derecho del último elemento */
-}
-
-.footer-links ul li a,
-.footer-social ul li a {
-    color: #fff; /* Color de enlaces en el pie de página */
+    padding: 0;
+  }
+  
+  li {
+    padding: 5px 0;
+  }
+  
+  a {
+    color: #000;
     text-decoration: none;
-    font-size: 16px; /* Tamaño de fuente de enlaces */
-}
+  }
+  
+  .list-inline {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  .list-inline-item {
+    padding: 5px 10px;
+  }
+  
+  .list-inline-item:first-child {
+    padding-left: 0;
+  }
+  
+  p {
+    font-size: 12px;
+  }
 
-/* Estilos para el texto de derechos de autor */
-.footer-text {
-    margin-top: 20px; /* Espaciado superior entre el contenido y el texto de derechos de autor */
-}
-
-.footer-text p {
-    font-size: 14px; /* Tamaño de fuente del texto de derechos de autor */
+  header {
+    position: fixed;
+    top: 0; /* Fija el encabezado en la parte superior */
+    left: 0; /* Fija el encabezado en la izquierda */
+    width: 100%; /* Ocupa el 100% del ancho de la pantalla */
+    background-color: #fff; /* Estilo de fondo opcional */
+    z-index: 100; /* Asegura que el encabezado esté en la parte superior de otros elementos */
+  }
+  
+  @media screen and (max-width: 768px) {
+    li {
+        margin-right: 10px; /* Margen reducido para pantallas más pequeñas */
+    }
 }
